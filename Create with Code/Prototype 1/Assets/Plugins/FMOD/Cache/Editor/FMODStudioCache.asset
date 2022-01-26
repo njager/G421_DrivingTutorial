@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../../Emitters/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637787934879683443
+  lastModified: 637787946351757172
   FileSizes:
   - Name: Desktop
     Value: 972832
@@ -90,7 +90,7 @@ MonoBehaviour:
   - {fileID: -3799394733462933230}
   StringsBanks:
   - {fileID: 7446958565753597408}
-  stringsBankWriteTime: 637787934879698442
+  stringsBankWriteTime: 637787946351767175
   cacheVersion: 8
 --- !u!114 &5987578787677902847
 MonoBehaviour:
@@ -130,7 +130,7 @@ MonoBehaviour:
   Path: ../../Emitters/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637787934879698442
+  lastModified: 637787946351767175
   FileSizes:
   - Name: Desktop
     Value: 856
