@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f879f449-ce40-4d22-9b3a-1b70558d7d11}">
+		<property name="assetPath">
+			<value>wood-debris1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.64507936507936503</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f2877542-c0b0-4e18-bfb6-3c6918443ca0}</destination>
+		</relationship>
+	</object>
+</objects>

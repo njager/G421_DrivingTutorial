@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{c2cc0e98-f8e0-4179-832e-3b5baaf5e00d}">
+		<property name="assetPath">
+			<value>bath-environ_mixdown.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>68.88933333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f2877542-c0b0-4e18-bfb6-3c6918443ca0}</destination>
+		</relationship>
+	</object>
+</objects>

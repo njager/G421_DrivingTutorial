@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{b13718dc-9f8e-419e-a6f8-ea70d3bcfd38}">
+		<property name="assetPath">
+			<value>bubbling1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.9296875</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f2877542-c0b0-4e18-bfb6-3c6918443ca0}</destination>
+		</relationship>
+	</object>
+</objects>
