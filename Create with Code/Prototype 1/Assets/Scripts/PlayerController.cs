@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
         forwardInput = Input.GetAxis("Vertical");
 
         //Calculate vehicle velocity using transform
-        VehicleVelocity = ((transform.position - whereItWas).magnitude) / Time.deltaTime;
+        VehicleVelocity = (((transform.position - whereItWas).magnitude) / Time.deltaTime) / 2;
         //Update vehicle position
         whereItWas = transform.position;
 
