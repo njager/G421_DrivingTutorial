@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{46bddb3a-db1b-4d62-bd93-36701dd87c65}">
+		<property name="assetPath">
+			<value>HotTub3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>3.2252708333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f2877542-c0b0-4e18-bfb6-3c6918443ca0}</destination>
+		</relationship>
+	</object>
+</objects>
