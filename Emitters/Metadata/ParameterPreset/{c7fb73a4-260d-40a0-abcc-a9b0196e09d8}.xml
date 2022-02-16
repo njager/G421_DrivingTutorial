@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{c7fb73a4-260d-40a0-abcc-a9b0196e09d8}">
+		<property name="name">
+			<value>Turn</value>
+		</property>
+		<relationship name="folder">
+			<destination>{478622a0-6079-42a4-b24b-eaf7600e6e8f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{cd503d41-0591-40ab-b7de-b719be9f45fe}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{cd503d41-0591-40ab-b7de-b719be9f45fe}">
+		<property name="maximum">
+			<value>10</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>47</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>23</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
+		</property>
+	</object>
+</objects>
