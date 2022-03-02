@@ -11,10 +11,12 @@ public class PlayerController : MonoBehaviour
 
     //tally the # of obstacles hit
     public int count = 0;
+    //track whcih obstacle hit
+    public int hitID = 0;
     //has the palyer started driving?
     public bool started = false;
     //name the fmod evenet emitter for music
-    FMODUnity.StudioEventEmitter ambiMusic;
+    FMODUnity.StudioEventEmitter gameMusic;
 
     //store vehicle location to calculate velocity
     private Vector3 whereItWas;
@@ -26,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        ambiMusic = GetComponent<FMODUnity.StudioEventEmitter>();
+        gameMusic = GetComponent<FMODUnity.StudioEventEmitter>();
     }
 
     // Update is called once per frame
@@ -64,17 +66,17 @@ public class PlayerController : MonoBehaviour
         }
         */
         //player interactions
-        if (!started)
+        /*if (!started)
         {
             //test keybaord for intiial palyer input on any direcitonal key
-            if(/*horizontalInput != 0 ||*/ forwardInput != 0)
+            if(horizontalInput != 0 || forwardInput != 0)
             {
                 //player is now driving
                 started = true;
                 //apply velocity value to the impact parameter and send to FMOD event
                 ambiMusic.SetParameter("driving", 1);
             }
-        }
+        }*/
     }
 
     //when this game object intersectsa  collider with 'is trigger' checked,
@@ -84,13 +86,22 @@ public class PlayerController : MonoBehaviour
         // if the game object we intersect has obstacle assigned
         if (other.gameObject.CompareTag("Obstacle"))
         {
+            //other.gameObject.SetActive(false);
             //increase the variable by one
-            count++;
+            //count++;
+            //gameMusic.SetParameter("Segment", count);
+
+            MusicSection musicSection = other.gameObject.GetComponent<MusicSection>();
+
+            hitID = musicSection.section;
+
+            gameMusic.SetParameter("Segment", hitID);
+            
         }
-        if(count == 5)
+        /*if(count == 5)
         {
             //play end tag if all hit
             ambiMusic.SetParameter("obstacles", 1);
-        }
+        }*/
     }
 }
