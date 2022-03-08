@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         //Rotate the vehicle based on horizontal input
         transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
 
-        /* //TUB CODE
+         //TUB CODE
         // calculate and store current RPM
         runRPM = VehicleVelocity * 100;
         //create emitter object
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
         {
             emitter.SetParameter("Turn", 0f);
         }
-        */
+        
         //player interactions
         /*if (!started)
         {
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
                 //player is now driving
                 started = true;
                 //apply velocity value to the impact parameter and send to FMOD event
-                ambiMusic.SetParameter("driving", 1);
+                gameMusic.SetParameter("driving", 1);
             }
         }*/
     }
@@ -84,9 +84,9 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // if the game object we intersect has obstacle assigned
-        if (other.gameObject.CompareTag("Obstacle"))
+        /*if (other.gameObject.CompareTag("Obstacle"))
         {
-            //other.gameObject.SetActive(false);
+            other.gameObject.SetActive(false);
             //increase the variable by one
             //count++;
             //gameMusic.SetParameter("Segment", count);
@@ -98,10 +98,10 @@ public class PlayerController : MonoBehaviour
             gameMusic.SetParameter("Segment", hitID);
             
         }
-        /*if(count == 5)
+        if(count == 5)
         {
             //play end tag if all hit
-            ambiMusic.SetParameter("obstacles", 1);
+            gameMusic.SetParameter("obstacles", 1);
         }*/
     }
 }

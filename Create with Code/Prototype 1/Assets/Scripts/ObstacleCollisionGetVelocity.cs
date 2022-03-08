@@ -15,7 +15,7 @@ public class ObstacleCollisionGetVelocity : MonoBehaviour
         vehicle = GameObject.Find("Vehicle");
     }
 
-    /*
+    
     void OnTriggerEnter()
     {
         //access player controllcer script
@@ -28,5 +28,5 @@ public class ObstacleCollisionGetVelocity : MonoBehaviour
         var emitter = GetComponent<FMODUnity.StudioEventEmitter>();
         //update the impact parameter with the velocity value
         emitter.SetParameter("impact", hitVelocity);
-    }*/
+    }
 }
