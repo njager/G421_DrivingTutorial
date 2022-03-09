@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{9eeb0fc7-46db-4e6c-b468-a06422a83c3a}">
+		<property name="assetPath">
+			<value>VerHorn.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>12</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f2877542-c0b0-4e18-bfb6-3c6918443ca0}</destination>
+		</relationship>
+	</object>
+</objects>
