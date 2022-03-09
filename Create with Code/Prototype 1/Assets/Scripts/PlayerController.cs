@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
         }
         
         //player interactions
-        /*if (!started)
+        if (!started)
         {
             //test keybaord for intiial palyer input on any direcitonal key
             if(horizontalInput != 0 || forwardInput != 0)
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
                 //apply velocity value to the impact parameter and send to FMOD event
                 gameMusic.SetParameter("driving", 1);
             }
-        }*/
+        }
     }
 
     //when this game object intersectsa  collider with 'is trigger' checked,
@@ -84,21 +84,21 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // if the game object we intersect has obstacle assigned
-        /*if (other.gameObject.CompareTag("Obstacle"))
+        if (other.gameObject.CompareTag("Obstacle"))
         {
             other.gameObject.SetActive(false);
             //increase the variable by one
-            //count++;
-            //gameMusic.SetParameter("Segment", count);
+            count++;
+            gameMusic.SetParameter("ObstaclesHit", count);
 
-            MusicSection musicSection = other.gameObject.GetComponent<MusicSection>();
+            //MusicSection musicSection = other.gameObject.GetComponent<MusicSection>();
 
-            hitID = musicSection.section;
+            //hitID = musicSection.section;
 
-            gameMusic.SetParameter("Segment", hitID);
+            //gameMusic.SetParameter("Segment", hitID);
             
         }
-        if(count == 5)
+        /*if(count == 5)
         {
             //play end tag if all hit
             gameMusic.SetParameter("obstacles", 1);
